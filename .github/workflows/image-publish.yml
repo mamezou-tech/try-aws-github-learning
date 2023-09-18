@@ -1,0 +1,26 @@
+name: image-publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        server-id: ghcr.io
+        settings-path: ${{ github.workspace }}
+    - name: Publish to GitHub Packages Apache Maven
+      run: mvn -B package docker:build docker:push -Dimage.tag=`date +%Y%m%dT%H%M%S-%3N` --file pom.xml -s $GITHUB_WORKSPACE/settings.xml
+      env: # 自分のリポジトリへのアクセスなのでPATではなくGITHUB_TOKENの権限で登録もできる
+        GITHUB_TOKEN: ${{ github.token }}

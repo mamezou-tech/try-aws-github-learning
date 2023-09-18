@@ -16,7 +16,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-@HelidonTest
+@HelidonTest(resetPerTest = true) // resetPerTest = trueを追加
 @AddConfig(key = "server.port", value = "7001")
 @ExtendWith(JulToSLF4DelegateExtension.class)
 public class HelloResourceTest {
@@ -32,6 +32,15 @@ public class HelloResourceTest {
     @Test
     void tesHello() {
         var expected = "Hello";
+        var actual = helllResource.hello();
+        assertEquals(expected, actual);
+    }
+
+    // このテストメソッドを追加
+    @Test
+    @AddConfig(key = "config.val", value = "override")
+    void tesHelloByConfig() {
+        var expected = "override";
         var actual = helllResource.hello();
         assertEquals(expected, actual);
     }
