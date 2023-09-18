@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration >
+<configuration>
+  <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+    <resetJUL>true</resetJUL>
+  </contextListener>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date [%-5level] [%logger{1}] [%thread] - %message%n</pattern>
+    </encoder>
+  </appender>
+  <logger name="io.helidon.webserver.AccessLog" level="DEBUG" />
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>

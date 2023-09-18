@@ -1,2 +1,2 @@
-# try-aws-github-learning
-This is a repository for study materials of an AWS and GitHub workshop.
+# AWSとGitHubを使ってみよう勉強会 資料
+- [第1回 キックオフ](docs/1st_AWSとGitHub勉強会_キックオフ.pdf)

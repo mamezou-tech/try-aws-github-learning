@@ -1,0 +1,31 @@
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "Java",
+	"image": "mcr.microsoft.com/devcontainers/java:0-17",
+
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "true",
+			"installGradle": "false"
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.fabric8-analytics",
+				"alphabotsec.vscode-eclipse-keybindings",
+				"DotJoshJohnson.xml",
+				"mhutchie.git-graph",
+				"MS-vsliveshare.vsliveshare"
+			],
+			"settings": {
+				"java.saveActions.organizeImports": true,
+				"java.configuration.updateBuildConfiguration": "automatic",
+				"java.format.settings.url": "java-formatter.xml",
+				"files.trimTrailingWhitespace": true
+			}
+		}
+	}
+}
