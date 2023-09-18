@@ -9,7 +9,7 @@
 - [第5回 AWS EC2環境の構築](docs/AWSとGitHub勉強会_5th_EC2.pdf)
 - [第6回 AWS ECS Fargate環境の構築](docs/AWSとGitHub勉強会_6th_Fargate.pdf)
 
-
+ 
 # 勉強会 補足情報
 ## 2回目課題(GitHub Actionsでビルドでしてjarをデプロイする)に関する情報
 ### sampleアプリのビルドと起動
