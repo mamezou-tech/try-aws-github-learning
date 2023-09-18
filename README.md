@@ -1,3 +1,5 @@
+> mianブランチが第1回 スタート時点の資材になります
+
 # AWSとGitHubを使ってみよう勉強会 資料
 - [第1回 キックオフ](docs/AWSとGitHub勉強会_1st_キックオフ.pdf)
 - [第2回 GitHub CodespacesとHelidonの利用](docs/AWSとGitHub勉強会_2nd_CodespacesとHelidon.pdf)
