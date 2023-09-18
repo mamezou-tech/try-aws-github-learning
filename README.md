@@ -1,10 +1,10 @@
 # AWSとGitHubを使ってみよう勉強会 資料
-- [第1回 キックオフ](docs/1st_AWSとGitHub勉強会_キックオフ.pdf)
-- [第2回 GitHub CodespacesとHelidonの利用](docs/2nd_AWSとGitHub勉強会_CodespacesとHelidon.pdf)
-- [第3回 GitHub Actionsを使ったCI環境の構築](docs/3rd_AWSとGitHub勉強会_GitHub_CI.pdf)
-- [第4回 GitHub Actionsを使ったCD環境の構築](docs/4th_AWSとGitHub勉強会_GitHub_CD.pdf)
-- [第5回 AWS EC2環境の構築](docs/5th_AWSとGitHub勉強会_EC2.pdf)
-- [第6回 AWS ECS Fargate環境の構築](docs/6th_AWSとGitHub勉強会_Fargate.pdf)
+- [第1回 キックオフ](docs/AWSとGitHub勉強会_1st_キックオフ.pdf)
+- [第2回 GitHub CodespacesとHelidonの利用](docs/AWSとGitHub勉強会_2nd_CodespacesとHelidon.pdf)
+- [第3回 GitHub Actionsを使ったCI環境の構築](docs/AWSとGitHub勉強会_3rd_GitHub_CI.pdf)
+- [第4回 GitHub Actionsを使ったCD環境の構築](docs/AWSとGitHub勉強会_4th_GitHub_CD.pdf)
+- [第5回 AWS EC2環境の構築](docs/AWSとGitHub勉強会_5th_EC2.pdf)
+- [第6回 AWS ECS Fargate環境の構築](docs/AWSとGitHub勉強会_6th_Fargate.pdf)
 
 
 # 勉強会 補足情報
